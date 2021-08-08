@@ -10,6 +10,7 @@ const app = express();
 const customerRoutes = require('./routes/customer');
 
 // settings
+const PORT = process.env.PORT || 5000;
 app.set('port', process.env.PORT || 5000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,3 +37,4 @@ app.listen(process.env.PORT || 5000, () => {
   //const port = app.address().port;
   //console.log(`Express is working on port ${port}`);
 });
+//app.listen(process.env.PORT || 5000)
