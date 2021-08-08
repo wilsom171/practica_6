@@ -17,11 +17,11 @@ app.set('view engine', 'ejs');
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-  host: 'localhost',
-  user: 'root',
-  password: 'contraseña',
+  host: 'us-cdbr-east-04.cleardb.com',
+  user: 'bb55e1d94e36a2',
+  password: '144b506e',
   port: 3306,
-  database: 'crudnodejsmysql'
+  database: 'heroku_a688a892ce4b6c2'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
